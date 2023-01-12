@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.UPSTREM_GITHUB_TOKEN }}
+          token: ${{ secrets.UPSTREM_GITHUB_TOKEN }}
       - name: Merge upstream
         run: |
           git config --global user.name 'Daekuen'
