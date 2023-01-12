@@ -3,6 +3,9 @@ on:
   workflow_dispatch:
   schedule: 
   - cron: "0 8 * * *" #Runs at 8:00 UTC(5:00 in Korea) every day.
+  push:
+    branches:
+      - master
 
 jobs:
   merge:
